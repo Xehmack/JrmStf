@@ -20,3 +20,16 @@ h3{
 p{
     text-align: center;
 }
+
+.titre{
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 100% 0% 100% 0% / 50% 50% 50% 50%   ;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(230, 135, 247);
+    height: 100%;
+    width: 60%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
