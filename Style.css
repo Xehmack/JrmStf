@@ -1,0 +1,22 @@
+body{
+    background-color:black;
+    background-image: url('images/index_bckgnd.jpg');
+    background-size:auto;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
