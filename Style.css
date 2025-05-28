@@ -1,6 +1,5 @@
 body{
-    background-color:black;
-    background-image: url('images/index_bckgnd.jpg');
+    background-color:white;
     background-size:auto;
     margin: 0;
 }
@@ -19,17 +18,87 @@ h3{
 
 p{
     text-align: center;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
 }
 
 .titre{
-    border-width: 5px;
+    font-family: Aokahori;
+    border-width: 3px;
     border-style: solid;
-    border-radius: 100% 0% 100% 0% / 50% 50% 50% 50%   ;
-    border-color: rgb(0, 0, 0);
-    background-color: rgb(230, 135, 247);
+    border-radius: 0% 0% 100% 0% / 0% 0% 90% 0%   ;
+    background-color: rgb(104, 0, 0);
     height: 100%;
-    width: 60%;
+    width: 100%;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.navigation{
+    
+}
+
+.histoire{
+    max-width: 20%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.footer{
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    width: 100%;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height:auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: Aokahori;
+  font-size: larger;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+@font-face {
+  font-family: Aokahori;
+  src: url(font/aokahori.ttf);
+}
+
+@font-face {
+  font-family: Nozarashi;
+  src: url(font/gazenozarashi.ttf);
 }
