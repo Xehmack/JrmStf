@@ -93,6 +93,29 @@ li a:hover {
   background-color: #111;
 }
 
+.anchor {
+    position: fixed;
+    top: 85%;
+    left: 85%;  
+    transform: scale(50%);
+    opacity: 0.75;
+    size: 5%;
+    border-style: solid;
+    border-width: 12px;
+    border-radius: 90% 10% 90% 10% / 10% 90% 10% 90% ;
+    
+}
+
+.anchor:hover{
+    opacity: 1;
+
+}
+.anchor:active{
+    opacity:0.9;
+
+}
+
+
 @font-face {
   font-family: Aokahori;
   src: url(font/aokahori.ttf);
@@ -102,3 +125,4 @@ li a:hover {
   font-family: Nozarashi;
   src: url(font/gazenozarashi.ttf);
 }
+
