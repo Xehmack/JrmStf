@@ -14,22 +14,25 @@ h2{
 
 h3{
     text-align: center;
+    font-size: 25px;
 }
 
 p{
-    text-align: center;
+    text-align:justify;
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
+    font-size: x-large;
 }
 
 .titre{
     font-family: Aokahori;
+    font-size: 60px;
     border-width: 3px;
     border-style: solid;
-    border-radius: 0% 0% 100% 0% / 0% 0% 90% 0%   ;
-    background-color: rgb(104, 0, 0);
+    border-radius: 0% 10% 29% 0% / 10% 0% 100% 10%     ;
+    background-color: rgb(146, 81, 81);
     height: 100%;
     width: 100%;
     align-items: center;
@@ -49,8 +52,59 @@ p{
     margin-top: 5%;
 }
 
+.container{
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #333333;
+  
+}
+
+.left_index{
+  width: 30%;
+  text-align: center;
+  background-image: linear-gradient(
+      to left, 
+      rgb(255, 255, 255), 
+      rgba(0, 0, 0, 0)   
+    ), 
+    url('images/Index/street_night.png');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.right_index{
+  width: 70%;
+  text-align: justify;
+}
+
+.left_i{
+  width: 15%;
+  text-align: center;
+}
+
+.right_i{
+  width: 85%;
+  background-color:#33333312;
+  text-align: center;
+}
+
+.left_p{
+  width: 85%;
+  background-color: white;
+  text-align: center;
+}
+
+.right_p{
+  width: 15%;
+  text-align: center;
+}
+
 .footer{
-    background-color: #333;
+    background-color: #676767;
+    top: 0;
     margin: 0;
     padding: 0;
     height: 20px;
@@ -95,8 +149,8 @@ li a:hover {
 
 .anchor {
     position: fixed;
-    top: 85%;
-    left: 85%;  
+    bottom: 1rem;
+    right: 1rem;  
     transform: scale(50%);
     opacity: 0.75;
     size: 5%;
@@ -110,11 +164,11 @@ li a:hover {
     opacity: 1;
 
 }
+
 .anchor:active{
     opacity:0.9;
 
 }
-
 
 @font-face {
   font-family: Aokahori;
