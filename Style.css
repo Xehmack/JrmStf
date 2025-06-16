@@ -40,10 +40,6 @@ p{
     margin-right: auto;
 }
 
-.navigation{
-    
-}
-
 .histoire{
     max-width: 20%;
     max-height: auto;
@@ -210,24 +206,6 @@ li a:hover {
 
 }
 
-@font-face {
-  font-family: Aokahori;
-  src: url(font/aokahori.ttf);
-}
-
-@font-face {
-  font-family: Nozarashi;
-  src: url(font/gazenozarashi.ttf);
-}
-
-
-
-
-
-
-
-
-
 .nav-container {
   position:fixed;
   display: inline-block;
@@ -281,16 +259,12 @@ li a:hover {
 }
 
 .navbar a:hover {
-  background-color: #f0f0f0;
+  background-color: #5e3434;
 }
 
 #nav-toggle:checked ~ .navbar {
   transform: scaleX(1);
 }
-
-
-
-
 
 .formulaire-container {
     background-color: #fa5773;
@@ -359,4 +333,18 @@ button:hover {
     align-items: center;
     height: 100vh; /* 100% of the viewport height */
     width: 100%;
+}
+
+
+
+
+
+@font-face {
+  font-family: Aokahori;
+  src: url(font/aokahori.ttf);
+}
+
+@font-face {
+  font-family: Nozarashi;
+  src: url(font/gazenozarashi.ttf);
 }
