@@ -55,9 +55,9 @@ p{
 .container{
   display: flex;
   justify-content: space-between;
-  border-style: solid;
   border-width: 2px;
   border-color: #333333;
+  
   
 }
 
@@ -80,26 +80,33 @@ p{
   text-align: justify;
 }
 
-.left_i{
+.container .left_i{
   width: 15%;
   text-align: center;
+  background-color: #cecece;
+  align-items: center;
 }
 
-.right_i{
+.container .right_i{
+  display: flex;
   width: 85%;
-  background-color:#33333312;
+  background-color:#cecece;
   text-align: center;
+  align-items: center;
 }
 
-.left_p{
+.container .left_p{
+  display: flex;
   width: 85%;
   background-color: white;
   text-align: center;
+  align-items: center;  
 }
 
-.right_p{
+.container .right_p{
   width: 15%;
   text-align: center;
+  align-items: center;
 }
 
 .footer{
@@ -109,6 +116,40 @@ p{
     padding: 0;
     height: 20px;
     width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    max-width: 90%; /* Limite la largeur totale de la galerie */\n            
+    margin: auto; /* Centre la galerie horizontalement */\n       
+}
+
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover {
+    transform: scale(1.2);
+}
+
+.photo:hover img {
+    transform: scale(1.1);
 }
 
 img{
@@ -127,20 +168,19 @@ ul {
 }
 
 li {
-  float: left;
+  border-style: solid;
+  border-top: #111;
 }
 
 li a {
   font-family: Aokahori;
-  font-size: larger;
+  font-size: 3rem;
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border: black;
-  border-style: solid;
-  border-width: 1px;
+  
 }
 
 li a:hover {
@@ -180,3 +220,143 @@ li a:hover {
   src: url(font/gazenozarashi.ttf);
 }
 
+
+
+
+
+
+
+
+
+.nav-container {
+  position:fixed;
+  display: inline-block;
+  top:2%;
+  left:2%;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-button {
+  background-color: #fa5773;
+  color: white;
+  padding: 10px 20px;
+  border: black;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background-color: #b30006;
+}
+
+.navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fdfdfe;
+  font-size: 2rem;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #f0f0f0;
+}
+
+#nav-toggle:checked ~ .navbar {
+  transform: scaleX(1);
+}
+
+
+
+
+
+.formulaire-container {
+    background-color: #fa5773;
+    padding: 20px 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.groupe_formulaire {
+    margin-bottom: 15px;
+}
+
+label {
+    font-family: aokahori;
+    font-weight: 700;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.centrage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */
+    width: 100%;
+}
