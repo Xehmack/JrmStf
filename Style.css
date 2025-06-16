@@ -230,6 +230,7 @@ li a:hover {
   transition: background-color 0.3s;
   display: inline-block;
   z-index: 10;
+  opacity: 0.75;
 }
 
 .nav-button:hover {
