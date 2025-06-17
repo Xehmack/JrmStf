@@ -340,7 +340,31 @@ button:hover {
     width: 100%;
 }
 
+textarea {
+    width: 100%; 
+    max-width: 500px; 
+    min-width: 300px; 
+    height: 150px; 
+    padding: 10px; 
+    border: 2px solid #007BFF; 
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px;
+    line-height: 1.5; 
+    resize: vertical; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; 
+}
 
+textarea:hover {
+    border-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+
+textarea:focus {
+    outline: none; 
+    border-color: #28a745; 
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.5);
+}
 
 
 
