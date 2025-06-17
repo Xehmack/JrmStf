@@ -359,6 +359,7 @@ textarea {
 textarea:hover {
     border-color: #0056b3;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
 
 textarea:focus {
     outline: none; 
